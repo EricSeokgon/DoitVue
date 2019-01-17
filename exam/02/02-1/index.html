@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div id="app">
+      {{message}}
+    </div>
+    <!--<scripts src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script> //-->
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script>
+        new Vue({
+          el: '#app',
+          data: {
+            message: 'Hello Vue.js!'
+          }
+        });
+      </script>
+  </body>
+</html>
