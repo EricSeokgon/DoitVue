@@ -1,7 +1,7 @@
 <template>
     <div>
         <input type="text" v-model="newTodoItem">
-        <button>추가</button>
+        <button v-on:click="addTodo">추가</button>
     </div>
 </template>
 <script>
@@ -10,7 +10,10 @@ export default {
         return{
             newTodoItem:''
         }
-    }
+    },
+    methods: {
+        console.log(this.newTodoItem);
+    },
 }
 </script>
 <style>
